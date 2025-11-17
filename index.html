@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD. ADNAN SAMI | Research Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         /* BASE STYLES */
@@ -324,17 +324,21 @@
         }
         .platform-cards {
             display: flex;
-            flex-wrap: wrap;
+            /* Flex-flow changed to allow all cards to fit, enabling horizontal scroll on small devices */
+            flex-flow: row nowrap; 
             justify-content: center;
             gap: 30px;
             width: 100%;
+            /* Added overflow for responsive card display */
+            overflow-x: auto; 
+            padding-bottom: 10px; /* Space for scroll bar */
         }
         .platform-card {
             background: var(--card-bg);
             padding: 30px;
             border-radius: 10px;
-            flex: 1 1 250px;
-            max-width: 300px;
+            flex: 0 0 250px; /* Fixed width, preventing compression */
+            max-width: 250px; 
             text-align: center;
             border: 1px solid #333;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -443,6 +447,12 @@
         }
 
         /* --- RESPONSIVE DESIGN --- */
+        @media(max-width:1200px){
+            /* Allow platform cards to stack or scroll nicely on smaller screens */
+            .platform-cards {
+                justify-content: flex-start;
+            }
+        }
         @media(max-width:900px){
             nav, .hero, .about, .projects-section, .contact-section, #problem-solving {
                 padding: 20px;
@@ -477,13 +487,6 @@
             }
             .badge-container img {
                 min-width: unset;
-            }
-            .platform-cards {
-                flex-direction: column;
-                align-items: center;
-            }
-            .platform-card {
-                max-width: 100%;
             }
         } 
     </style>
@@ -617,26 +620,35 @@
                 </div>
 
                 <div class="platform-cards">
-                    <div class="platform-card fade-in">
+                    
+                    <div class="platform-card">
                         <h3>CodeChef</h3>
                         <div class="platform-stats">—</div>
                         <div style="font-size: 14px; color: #aaa;">Problems Solved</div>
                         <a href="https://www.codechef.com/users/codewith_adnan" class="platform-link" target="_blank">View Profile →</a>
                     </div>
-
-                    <div class="platform-card fade-in delay-1">
+                    
+                    <div class="platform-card">
                         <h3>Codeforces</h3>
                         <div class="platform-stats">—</div>
                         <div style="font-size: 14px; color: #aaa;">Current Rating</div>
                         <a href="https://codeforces.com/profile/adnan119" class="platform-link" target="_blank">View Profile →</a>
                     </div>
 
-                    <div class="platform-card fade-in delay-2">
-                        <h3>GitHub</h3>
-                        <div class="platform-stats">Active</div>
-                        <div style="font-size: 14px; color: #aaa;">Contributions</div>
-                        <a href="https://github.com/adnansami68" class="platform-link" target="_blank">View Profile →</a>
+                    <div class="platform-card">
+                        <h3>LeetCode</h3>
+                        <div class="platform-stats">—</div>
+                        <div style="font-size: 14px; color: #aaa;">Problems Solved</div>
+                        <a href="https://leetcode.com/u/adnansami68/" class="platform-link" target="_blank">View Profile →</a>
                     </div>
+
+                    <div class="platform-card">
+                        <h3>HackerRank</h3>
+                        <div class="platform-stats">—</div>
+                        <div style="font-size: 14px; color: #aaa;">Skills & Badges</div>
+                        <a href="https://www.hackerrank.com/profile/a_m_adnansami143" class="platform-link" target="_blank">View Profile →</a>
+                    </div>
+
                 </div>
             </div>
         </div>
