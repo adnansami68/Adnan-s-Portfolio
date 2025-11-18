@@ -1,29 +1,13 @@
-# MD. ADNAN SAMI | Research Portfolio
+# 💫 Hi 👋 I'm 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=30&color=1ABC9C&center=false&vCenter=true&width=500&lines=Adnan+Sami;CSE+Undergraduate;Aspiring+Software+Engineer)](https://git.io/typing-svg)
 
-**Research Student | CSE | Passionate About Problem Solving, Projects, and Academic Research**
-
----
-
-
-## About Me
-
-I am **MD. ADNAN SAMI**, a passionate CSE student focusing on research, problem-solving, and innovative projects.  
-I enjoy exploring new technologies, contributing to research work, and mentoring others.
+![Profile Views](https://komarev.com/ghpvc/?username=adnansami68&label=Profile%20Views&color=1abc9c&style=for-the-badge)
 
 ---
 
-## Skills
+## 🌐 My Portfolio  
 
-- **Programming Languages:** C, C++,OOP,Python  
-- **Data Analysis & Problem Solving**  
-- **Research & Academic Writing**
+[![Portfolio](https://img.shields.io/badge/Portfolio-1abc9c?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adnansami68.github.io/Adnan-s-Portfolio/)
 
----
-
-## Projects & Research Work
-
-### SDP-1: Bank Management System
-- Developed in C++ for account management, deposits, withdrawals, and transactions.  
--| [GitHub](https://github.com/adnansami68/SDP-1)
-
+🚀 Explore my projects, designs, and all my coding work in one place!
 
